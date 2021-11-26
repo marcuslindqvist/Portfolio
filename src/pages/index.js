@@ -32,3 +32,63 @@ const IndexPage = ({ data }) => {
 };
 
 export default IndexPage;
+
+// import { useState, useEffect } from "react";
+// import "./App.css";
+
+// export const query = graphql`
+//     {
+//         allContentfulBlogPost {
+//             nodes {
+//                 id
+//                 title
+//                 text {
+//                     text
+//                 }
+//             }
+//         }
+//     }
+// `;
+
+// function App() {
+//     const [posts, setPosts] = useState(null);
+
+//     useEffect(() => {
+//         window
+//             .fetch(
+//                 `https://graphql.contentful.com/content/v1/spaces/[YOUR_SPACE_ID]/`,
+//                 {
+//                     method: "POST",
+//                     headers: {
+//                         "Content-Type": "application/json",
+//                         Authorization: "Bearer [YOUR_ACCESS_TOKEN]",
+//                     },
+//                     body: JSON.stringify({ query }),
+//                 }
+//             )
+//             .then((response) => response.json())
+//             .then(({ data, errors }) => {
+//                 if (errors) {
+//                     console.error(errors);
+//                 }
+
+//                 setPage(data.pageCollection.items[0]);
+//             });
+//     }, []);
+
+//     if (!page) {
+//         return "Loading...";
+//     }
+
+//     // render the fetched Contentful data
+//     return (
+//         <div className="App">
+//             <header className="App-header">
+//                 <img src={page.logo.url} className="App-logo" alt="logo" />
+//                 <p>{page.title}</p>
+//             </header>
+//         </div>
+//     );
+// }
+
+// export default App;
