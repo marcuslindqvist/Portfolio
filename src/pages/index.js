@@ -1,94 +1,31 @@
 import * as React from "react";
-import { graphql } from "gatsby";
 import "../styling/index.css";
+import Nav from "../components/nav";
+import Header from "../components/header";
+import SideNav from "../components/SideNav";
 
-export const query = graphql`
-    {
-        allContentfulBlogPost {
-            nodes {
-                id
-                title
-                text {
-                    text
-                }
-            }
-        }
-    }
-`;
-
-// markup
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
     return (
-        <main>
-            <h1>Hej!</h1>
-            {data.allContentfulBlogPost.nodes.map((post) => (
-                <div key={post.id}>
-                    <h3>{post.title}</h3>
-                    <p>{post.text.text}</p>
+        <div className="page-container">
+            <Header />
+            <div className="content-sidenav-container">
+                <div className="content">
+                    <img
+                        src="https://live.staticflickr.com/4280/35183938852_24d64ad4f0_h.jpg"
+                        id="index-img"
+                        width="1600"
+                        height="1060"
+                        alt="Untitled"
+                    />
+                    <div id="content">
+                        <h1>DEVELOPER</h1>
+                    </div>
                 </div>
-            ))}
-        </main>
+                <SideNav />
+            </div>
+            <Nav />
+        </div>
     );
 };
 
 export default IndexPage;
-
-// import { useState, useEffect } from "react";
-// import "./App.css";
-
-// export const query = graphql`
-//     {
-//         allContentfulBlogPost {
-//             nodes {
-//                 id
-//                 title
-//                 text {
-//                     text
-//                 }
-//             }
-//         }
-//     }
-// `;
-
-// function App() {
-//     const [posts, setPosts] = useState(null);
-
-//     useEffect(() => {
-//         window
-//             .fetch(
-//                 `https://graphql.contentful.com/content/v1/spaces/[YOUR_SPACE_ID]/`,
-//                 {
-//                     method: "POST",
-//                     headers: {
-//                         "Content-Type": "application/json",
-//                         Authorization: "Bearer [YOUR_ACCESS_TOKEN]",
-//                     },
-//                     body: JSON.stringify({ query }),
-//                 }
-//             )
-//             .then((response) => response.json())
-//             .then(({ data, errors }) => {
-//                 if (errors) {
-//                     console.error(errors);
-//                 }
-
-//                 setPage(data.pageCollection.items[0]);
-//             });
-//     }, []);
-
-//     if (!page) {
-//         return "Loading...";
-//     }
-
-//     // render the fetched Contentful data
-//     return (
-//         <div className="App">
-//             <header className="App-header">
-//                 <img src={page.logo.url} className="App-logo" alt="logo" />
-//                 <p>{page.title}</p>
-//             </header>
-//         </div>
-//     );
-// }
-
-// export default App;
