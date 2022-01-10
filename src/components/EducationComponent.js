@@ -7,35 +7,60 @@ const EducationComponent = () => {
             <StaticQuery
                 query={graphql`
                     query EducationQuery {
-                        allContentfulEducation {
+                        allContentfulPerson(
+                            filter: {
+                                firstName: { eq: "Marcus" }
+                                surname: { eq: "Lindqvist" }
+                            }
+                        ) {
                             nodes {
-                                courseName
-                                description {
-                                    description
+                                education {
+                                    courseName
+                                    description {
+                                        description
+                                    }
+                                    endDate(formatString: "YYYY")
+                                    id
+                                    schoolName
+                                    startDate(formatString: "YYYY")
                                 }
-                                id
-                                schoolName
-                                startDate(formatString: "")
-                                isOngoing
-                                endDate
                             }
                         }
                     }
                 `}
                 render={(data) => (
-                    <div>
-                        <h4>Utbildning</h4>
-                        {data.allContentfulEducation.nodes.map((education) => (
-                            <ul key={education.id}>
-                                <li>
-                                    Tid:{education.startDate} till
-                                    {education.endDate} <br />
-                                    Skola:{education.schoolName}
-                                    <br />
-                                    Utbildning: {education.courseName}
-                                </li>
-                            </ul>
-                        ))}
+                    <div className="resume-item">
+                        <h2>Utbildning</h2>
+                        <ul className="comp-list">
+                            {data.allContentfulPerson.nodes[0].education.map(
+                                (education) => (
+                                    <li key={education.id} className="exp-item">
+                                        <span className="dot"></span>
+                                        <strong>
+                                            <p>
+                                                {education.startDate}{" "}
+                                                {education.startDate !==
+                                                education.endDate ? (
+                                                    <span>
+                                                        - {education.endDate}
+                                                    </span>
+                                                ) : (
+                                                    <span></span>
+                                                )}
+                                            </p>
+                                        </strong>
+                                        <p className="school-name">
+                                            {education.schoolName}
+                                        </p>
+                                        <br />
+                                        <h3>{education.courseName}</h3>
+                                        <p className="desc">
+                                            {education.description.description}
+                                        </p>
+                                    </li>
+                                )
+                            )}
+                        </ul>
                     </div>
                 )}
             />

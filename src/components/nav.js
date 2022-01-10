@@ -4,20 +4,41 @@ import { Link } from "gatsby";
 const Layout = () => {
     return (
         <nav className="nav">
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-                <li>
-                    <Link to="/resume">Resume</Link>
-                </li>
-                <li>
-                    <Link to="/projects">Projects</Link>
-                </li>
-            </ul>
+            <Link
+                to="/"
+                activeClassName="activeLink"
+                isCurrent={true}
+                className="nav-link nav-link-fade-up"
+            >
+                Hem
+            </Link>
+
+            <Link
+                to="/about"
+                activeClassName="activeLink"
+                isCurrent={true}
+                className="nav-link nav-link-fade-up"
+            >
+                Om
+            </Link>
+
+            <Link
+                to="/resume"
+                activeClassName="activeLink"
+                isCurrent={true}
+                className="nav-link nav-link-fade-up"
+            >
+                Resumé
+            </Link>
+
+            <Link
+                to="/projects"
+                activeClassName="activeLink"
+                isCurrent={true}
+                className="nav-link nav-link-fade-up"
+            >
+                Projekt
+            </Link>
         </nav>
     );
 };

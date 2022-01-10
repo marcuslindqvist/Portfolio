@@ -3,15 +3,44 @@ import { graphql } from "gatsby";
 import Nav from "../components/nav";
 import Header from "../components/header";
 import SideNav from "../components/SideNav";
-import CV from "../assets/MarcusLindqvistCV.pdf";
+// import CV from "../assets/MarcusLindqvistCV.pdf";
 
 export const query = graphql`
     {
-        allContentfulPersonalLetter {
+        allContentfulSkill(
+            filter: {
+                person: {
+                    elemMatch: {
+                        firstName: { eq: "Marcus" }
+                        surname: { eq: "Lindqvist" }
+                    }
+                }
+            }
+        ) {
             nodes {
                 id
-                text {
-                    text
+                title
+                description {
+                    description
+                }
+            }
+        }
+        allContentfulPerson(
+            filter: {
+                firstName: { eq: "Marcus" }
+                surname: { eq: "Lindqvist" }
+            }
+        ) {
+            nodes {
+                personal_letter {
+                    text {
+                        text
+                    }
+                    profilePicture {
+                        file {
+                            url
+                        }
+                    }
                 }
             }
         }
@@ -22,14 +51,15 @@ const AboutPage = ({ data }) => {
     return (
         <div className="page-container">
             <Header />
-            <div className="content-sidenav-container">
+            <div className="content-sidenav-container about">
                 <div className="content">
                     <div className="about-content-container image">
                         <img
-                            src="https://live.staticflickr.com/4261/35221111761_f7f9ae1ec7_z.jpg"
-                            width="424"
-                            height="640"
-                            alt="Untitled"
+                            src={
+                                data.allContentfulPerson.nodes[0]
+                                    .personal_letter[0].profilePicture.file.url
+                            }
+                            alt="profile picture"
                         />
                     </div>
                     <div className="about-content-container text">
@@ -45,37 +75,24 @@ const AboutPage = ({ data }) => {
                                 </h1>
                             </span>
                         </div>
-                        {data.allContentfulPersonalLetter.nodes.map(
-                            (pLetter) => (
-                                <div
-                                    className="personal-letter"
-                                    key={pLetter.id}
-                                >
-                                    <p>{pLetter.text.text}</p>
-                                </div>
-                            )
-                        )}
-                        <div className="skills-grid">
-                            <div id="box-one">
-                                <h3>Develop</h3>
-                            </div>
-                            <div id="box-two">
-                                <h3>Design</h3>
-                            </div>
-                            <div id="box-three">
-                                <i className="fas fa-camera"></i>
-                                <h3>Photography</h3>
-                            </div>
-                            <div id="box-four">
-                                <h3>Communication</h3>
-                            </div>
-                            <a href={CV} download>
-                                <div className="cv-download">Hämta CV</div>
-                            </a>
-                        </div>
+                        <p>
+                            {
+                                data.allContentfulPerson.nodes[0]
+                                    .personal_letter[0].text.text
+                            }
+                        </p>
                     </div>
                 </div>
-                <SideNav />
+
+                {/* <SideNav /> */}
+            </div>
+            <div className="skills-row">
+                {data.allContentfulSkill.nodes.map((skill) => (
+                    <div className="skill-item" key={skill.id}>
+                        <h3>{skill.title}</h3>
+                        <p>{skill.description.description}</p>
+                    </div>
+                ))}
             </div>
             <Nav />
         </div>

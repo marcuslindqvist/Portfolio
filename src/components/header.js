@@ -3,16 +3,23 @@ import { StaticQuery, graphql } from "gatsby";
 import { Link } from "gatsby";
 
 const Header = () => {
+    const space = "\u00a0";
+
     return (
         <StaticQuery
             query={graphql`
                 query PersonQuery {
-                    allContentfulPerson {
+                    allContentfulPerson(
+                        filter: {
+                            firstName: { eq: "Marcus" }
+                            surname: { eq: "Lindqvist" }
+                        }
+                    ) {
                         nodes {
-                            id
+                            firstName
+                            surname
                             personalInformation {
                                 email
-                                name
                             }
                         }
                     }
@@ -22,10 +29,9 @@ const Header = () => {
                 <header className="top-header">
                     <h4>
                         <Link to="/">
-                            {
-                                data.allContentfulPerson.nodes[0]
-                                    .personalInformation.name
-                            }
+                            {data.allContentfulPerson.nodes[0].firstName}
+                            {space}
+                            {data.allContentfulPerson.nodes[0].surname}
                         </Link>
                     </h4>
                     <h4>
