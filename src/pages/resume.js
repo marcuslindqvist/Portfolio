@@ -1,23 +1,21 @@
-import * as React from "react";
-import Header from "../components/header";
-import SideNav from "../components/SideNav";
-import Nav from "../components/nav";
-import EducationComponent from "../components/EducationComponent";
-import WorkLifeComponent from "../components/WorkLifeComponent";
+import * as React from 'react';
+import WorkLifeComponent from '../components/WorkLifeComponent';
+import Layout from '../components/layout';
 
 const Resume = () => {
     return (
-        <div className="page-container">
-            <Header />
-            <div className="content-sidenav-container">
+        <Layout>
+            <div className="content-sideNavComponent-container">
                 <div className="content resume">
-                    <EducationComponent />
+                    <div className="resume-title">
+                        <h1>Arbetsliv</h1>
+                        //flippa mellan de olika
+                        <h1>Utbildning</h1>
+                    </div>
                     <WorkLifeComponent />
                 </div>
-                {/* <SideNav /> */}
             </div>
-            <Nav />
-        </div>
+        </Layout>
     );
 };
 

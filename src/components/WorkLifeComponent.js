@@ -1,5 +1,5 @@
-import * as React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import * as React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
 const WorkLifeComponent = () => {
     return (
@@ -31,7 +31,6 @@ const WorkLifeComponent = () => {
                 `}
                 render={(data) => (
                     <div className="resume-item">
-                        <h2>Arbetsliv</h2>
                         <ul className="comp-list">
                             {data.allContentfulPerson.nodes[0].work_experience.map(
                                 (job) => (

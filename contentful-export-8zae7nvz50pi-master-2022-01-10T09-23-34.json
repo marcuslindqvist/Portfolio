@@ -1,0 +1,2690 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "education",
+        "type": "ContentType",
+        "createdAt": "2021-12-09T10:14:31.707Z",
+        "updatedAt": "2021-12-13T11:29:35.580Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-12-13T11:29:35.580Z",
+        "firstPublishedAt": "2021-12-09T10:14:32.011Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        }
+      },
+      "displayField": "courseName",
+      "name": "Education",
+      "description": "",
+      "fields": [
+        {
+          "id": "courseName",
+          "name": "Course Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "schoolName",
+          "name": "School Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "startDate",
+          "name": "Start Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "endDate",
+          "name": "End Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "owner",
+          "name": "Owner",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkContentType": [
+                "person"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "qualification",
+        "type": "ContentType",
+        "createdAt": "2021-12-09T10:18:29.614Z",
+        "updatedAt": "2021-12-09T10:18:29.965Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2021-12-09T10:18:29.965Z",
+        "firstPublishedAt": "2021-12-09T10:18:29.965Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        }
+      },
+      "displayField": "type",
+      "name": "Qualification",
+      "description": "",
+      "fields": [
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "personalLetter",
+        "type": "ContentType",
+        "createdAt": "2021-12-09T10:19:24.016Z",
+        "updatedAt": "2021-12-16T15:46:54.512Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2021-12-16T15:46:54.512Z",
+        "firstPublishedAt": "2021-12-09T10:19:24.424Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        }
+      },
+      "displayField": "jobCategory",
+      "name": "Personal Letter",
+      "description": "",
+      "fields": [
+        {
+          "id": "text",
+          "name": "Text",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "jobCategory",
+          "name": "Job Category",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "owner",
+          "name": "Owner",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkContentType": [
+                "person"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "profilePicture",
+          "name": "Profile Picture",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "contactDetails",
+        "type": "ContentType",
+        "createdAt": "2021-12-09T10:30:42.426Z",
+        "updatedAt": "2021-12-13T11:28:45.363Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2021-12-13T11:28:45.363Z",
+        "firstPublishedAt": "2021-12-09T10:30:42.730Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        }
+      },
+      "displayField": "email",
+      "name": "Contact Details",
+      "description": "",
+      "fields": [
+        {
+          "id": "email",
+          "name": "Email",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^\\w[\\w.-]*@([\\w-]+\\.)+[\\w-]+$",
+                "flags": null
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "phoneNumber",
+          "name": "Phone Number",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "size": {
+                "max": 12
+              },
+              "message": "Number is too long! Keep it like +46701234567"
+            }
+          ],
+          "defaultValue": {
+            "en-US": "+46"
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "owner",
+          "name": "Owner",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkContentType": [
+                "person"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "workExperience",
+        "type": "ContentType",
+        "createdAt": "2021-12-09T13:23:19.970Z",
+        "updatedAt": "2021-12-13T11:32:22.516Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-12-13T11:32:22.516Z",
+        "firstPublishedAt": "2021-12-09T13:23:20.294Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Work Experience",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "employer",
+          "name": "Employer",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "location",
+          "name": "Location",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "startDate",
+          "name": "Start Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "endDate",
+          "name": "End Date",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "isOngoing",
+          "name": "isOngoing",
+          "type": "Boolean",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "defaultValue": {
+            "en-US": false
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "owner",
+          "name": "Owner",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkContentType": [
+                "person"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "person",
+        "type": "ContentType",
+        "createdAt": "2021-12-10T19:38:37.367Z",
+        "updatedAt": "2021-12-13T11:35:29.408Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2021-12-13T11:35:29.408Z",
+        "firstPublishedAt": "2021-12-10T19:38:37.846Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        }
+      },
+      "displayField": "firstName",
+      "name": "Person",
+      "description": "",
+      "fields": [
+        {
+          "id": "firstName",
+          "name": "First Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "surname",
+          "name": "Surname",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "personalInformation",
+          "name": "Personal Information",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkContentType": [
+                "contactDetails"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "skill",
+        "type": "ContentType",
+        "createdAt": "2021-12-13T18:34:19.188Z",
+        "updatedAt": "2021-12-13T18:42:41.390Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2021-12-13T18:42:41.390Z",
+        "firstPublishedAt": "2021-12-13T18:34:19.506Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Skill",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "person",
+          "name": "Person",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "person"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "8zae7nvz50pi",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2021-12-09T10:14:32.109Z",
+        "createdBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-12-13T11:29:36.095Z",
+        "updatedBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "education",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "courseName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "schoolName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "startDate",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "endDate",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "owner",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "8zae7nvz50pi",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2021-12-09T10:18:30.001Z",
+        "createdBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-12-09T10:18:30.457Z",
+        "updatedBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "qualification",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "type",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "8zae7nvz50pi",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 11,
+        "createdAt": "2021-12-09T10:19:24.474Z",
+        "createdBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-12-16T15:46:55.777Z",
+        "updatedBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "personalLetter",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "text",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "jobCategory",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "owner",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "profilePicture",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "8zae7nvz50pi",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 8,
+        "createdAt": "2021-12-09T10:30:42.786Z",
+        "createdBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-12-13T11:28:45.877Z",
+        "updatedBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "contactDetails",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "email",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "phoneNumber",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "owner",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "8zae7nvz50pi",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2021-12-09T13:23:20.402Z",
+        "createdBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-12-13T11:32:23.108Z",
+        "updatedBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "workExperience",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "employer",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "location",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "startDate",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "endDate",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "isOngoing",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "owner",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "8zae7nvz50pi",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2021-12-10T19:38:37.880Z",
+        "createdBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-12-13T11:35:29.939Z",
+        "updatedBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "person",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "firstName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "surname",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "personalInformation",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "8zae7nvz50pi",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2021-12-13T18:34:19.557Z",
+        "createdBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-12-13T18:42:41.843Z",
+        "updatedBy": {
+          "sys": {
+            "id": "17ZdB3RWZM5G30WcMw3G4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "skill",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "person",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "5eKozl8YxrFGkktdVGT5KP",
+        "type": "Entry",
+        "createdAt": "2021-12-09T10:31:01.498Z",
+        "updatedAt": "2021-12-13T11:28:16.183Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2021-12-13T11:28:16.183Z",
+        "firstPublishedAt": "2021-12-09T10:31:21.232Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "contactDetails"
+          }
+        }
+      },
+      "fields": {
+        "email": {
+          "en-US": "marcus.lindqvist@iths.se"
+        },
+        "phoneNumber": {
+          "en-US": "0701456366"
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "192107AOMn7vvrFldS3jpB",
+        "type": "Entry",
+        "createdAt": "2021-12-09T10:33:03.945Z",
+        "updatedAt": "2021-12-16T15:52:32.112Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-12-16T15:52:32.112Z",
+        "firstPublishedAt": "2021-12-09T10:33:32.842Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "personalLetter"
+          }
+        }
+      },
+      "fields": {
+        "text": {
+          "en-US": "Efter att ha testat olika sorters\njobb, rest och bildat familj\nkände jag mig för första\ngången redo att välja en\nutbildning och påbörja en\nyrkesbana. Nu studerar jag\nFront End Developing och jag\nälskar det logiska tänkandet,\nproblemlösandet och det\nkreativa i att få skapa snygga\nlayouter och smarta\nfunktioner. "
+        },
+        "jobCategory": {
+          "en-US": "Frontend"
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        },
+        "profilePicture": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2d2eYkcq7l0Opt2bMtttbd"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "7mHI6sk3nMVgcLxC31cZhS",
+        "type": "Entry",
+        "createdAt": "2021-12-09T12:37:05.694Z",
+        "updatedAt": "2021-12-13T11:30:56.812Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2021-12-13T11:30:56.812Z",
+        "firstPublishedAt": "2021-12-09T12:38:25.952Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "education"
+          }
+        }
+      },
+      "fields": {
+        "courseName": {
+          "en-US": "Teknikprogrammet"
+        },
+        "schoolName": {
+          "en-US": "Thorildsplans Gymnasium"
+        },
+        "description": {
+          "en-US": "Inriktning på Arkitektur & Samhällsbyggande"
+        },
+        "startDate": {
+          "en-US": "2005-08-07"
+        },
+        "endDate": {
+          "en-US": "2008-06-12"
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "5jLiOByhHjb4IPXc7szqra",
+        "type": "Entry",
+        "createdAt": "2021-12-09T12:39:11.270Z",
+        "updatedAt": "2021-12-13T11:30:37.954Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2021-12-13T11:30:37.954Z",
+        "firstPublishedAt": "2021-12-09T12:40:14.869Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "education"
+          }
+        }
+      },
+      "fields": {
+        "courseName": {
+          "en-US": "Programmering 1 & 2"
+        },
+        "schoolName": {
+          "en-US": "NTI-Skolan"
+        },
+        "description": {
+          "en-US": "Språk: C#"
+        },
+        "startDate": {
+          "en-US": "2019-10-15"
+        },
+        "endDate": {
+          "en-US": "2020-11-17"
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "silgJuQrJXZ39g534o08x",
+        "type": "Entry",
+        "createdAt": "2021-12-09T12:40:24.953Z",
+        "updatedAt": "2021-12-13T11:29:55.411Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2021-12-13T11:29:55.411Z",
+        "firstPublishedAt": "2021-12-09T12:41:07.670Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "education"
+          }
+        }
+      },
+      "fields": {
+        "courseName": {
+          "en-US": "Webbutveckling 1"
+        },
+        "schoolName": {
+          "en-US": "NTI-Skolan"
+        },
+        "description": {
+          "en-US": "HTML & CSS"
+        },
+        "startDate": {
+          "en-US": "2020-07-14"
+        },
+        "endDate": {
+          "en-US": "2020-12-15"
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "5sj4xCHFXWTV0UlmTDKchl",
+        "type": "Entry",
+        "createdAt": "2021-12-09T12:41:49.146Z",
+        "updatedAt": "2021-12-14T12:50:56.107Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 28,
+        "publishedAt": "2021-12-14T12:50:56.107Z",
+        "firstPublishedAt": "2021-12-09T12:43:08.436Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 29,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "education"
+          }
+        }
+      },
+      "fields": {
+        "courseName": {
+          "en-US": "Frontend-Utvecklare"
+        },
+        "schoolName": {
+          "en-US": "IT-Högskolan"
+        },
+        "description": {
+          "en-US": "2-årig YH-utbildning som ger kompetens inom HTML,CSS,JavaScript, Databaser, UX/UI m m."
+        },
+        "startDate": {
+          "en-US": "2020-08-09"
+        },
+        "endDate": {
+          "en-US": "2022-06-10"
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "6OkGn5mVQSqdzE2eVAfsqt",
+        "type": "Entry",
+        "createdAt": "2021-12-09T13:48:57.865Z",
+        "updatedAt": "2021-12-13T11:33:07.687Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 21,
+        "publishedAt": "2021-12-13T11:33:07.687Z",
+        "firstPublishedAt": "2021-12-09T13:50:42.050Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 22,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "workExperience"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Fotograf"
+        },
+        "employer": {
+          "en-US": "Frilans"
+        },
+        "location": {
+          "en-US": "Stockholm"
+        },
+        "startDate": {
+          "en-US": "2018-07-17"
+        },
+        "isOngoing": {
+          "en-US": true
+        },
+        "description": {
+          "en-US": "Tagit uppdrag som fotograf, både för privatpersoner och företag. För det mesta personporträtt. Arbetat i Photoshop, Lightroom och annan programvara för att redigera bilder."
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "5X209EM4VqymtYbZWFNsQr",
+        "type": "Entry",
+        "createdAt": "2021-12-10T19:44:36.501Z",
+        "updatedAt": "2021-12-13T11:27:58.828Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-12-13T11:27:58.828Z",
+        "firstPublishedAt": "2021-12-10T19:50:19.884Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "person"
+          }
+        }
+      },
+      "fields": {
+        "firstName": {
+          "en-US": "Marcus"
+        },
+        "surname": {
+          "en-US": "Lindqvist"
+        },
+        "personalInformation": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5eKozl8YxrFGkktdVGT5KP"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "7JnVnofbfnffgmzXpV7QQY",
+        "type": "Entry",
+        "createdAt": "2021-12-13T10:59:57.607Z",
+        "updatedAt": "2021-12-13T11:33:23.908Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 28,
+        "publishedAt": "2021-12-13T11:33:23.908Z",
+        "firstPublishedAt": "2021-12-13T11:03:41.059Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 29,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "workExperience"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Personlig Assistent"
+        },
+        "employer": {
+          "en-US": "Brukarkooperativet JAG "
+        },
+        "location": {
+          "en-US": "Stockholm"
+        },
+        "startDate": {
+          "en-US": "2013-07-01"
+        },
+        "isOngoing": {
+          "en-US": true
+        },
+        "description": {
+          "en-US": "Arbete som personlig assistent åt en person med fysiska och intellektuella funktionsvariationer. Uppdraget inbegriper både fysisk omvårdnad, att agera tolk i sociala sammanhang, att kompensera för kognitiva behov och att arbeta lågaffektivt."
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "ekGEMJTH5CAgmBAVjqwDb",
+        "type": "Entry",
+        "createdAt": "2021-12-13T11:55:46.071Z",
+        "updatedAt": "2021-12-13T11:58:14.006Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2021-12-13T11:58:14.006Z",
+        "firstPublishedAt": "2021-12-13T11:57:18.823Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "workExperience"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Brevbärare"
+        },
+        "employer": {
+          "en-US": "Bring City Mail"
+        },
+        "location": {
+          "en-US": "Stockholm"
+        },
+        "startDate": {
+          "en-US": "2013-01-13"
+        },
+        "endDate": {
+          "en-US": "2013-12-12"
+        },
+        "isOngoing": {
+          "en-US": false
+        },
+        "description": {
+          "en-US": "Arbetade som cyklande brevbärare i Vårberg."
+        },
+        "owner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5X209EM4VqymtYbZWFNsQr"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "1dfC7oItYSleZn4HpckJBY",
+        "type": "Entry",
+        "createdAt": "2021-12-13T18:40:38.782Z",
+        "updatedAt": "2021-12-13T18:42:27.573Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2021-12-13T18:42:27.573Z",
+        "firstPublishedAt": "2021-12-13T18:41:28.220Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "HTML & CSS"
+        },
+        "description": {
+          "en-US": "I know my elements and selectors!"
+        },
+        "person": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5X209EM4VqymtYbZWFNsQr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "6M9EI6lxRE8fpLENJWIwWO",
+        "type": "Entry",
+        "createdAt": "2021-12-13T18:43:05.950Z",
+        "updatedAt": "2021-12-13T18:49:47.495Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2021-12-13T18:49:47.495Z",
+        "firstPublishedAt": "2021-12-13T18:49:47.495Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "JavaScript"
+        },
+        "description": {
+          "en-US": "Only thing i don't have to google are for-loops but I'm great"
+        },
+        "person": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5X209EM4VqymtYbZWFNsQr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "Z6oKRdtqAdH2VxZwZ0Urm",
+        "type": "Entry",
+        "createdAt": "2021-12-13T18:50:07.815Z",
+        "updatedAt": "2021-12-13T18:50:48.941Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2021-12-13T18:50:48.941Z",
+        "firstPublishedAt": "2021-12-13T18:50:48.941Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Node.js"
+        },
+        "description": {
+          "en-US": "I created a full stack application in Node once!"
+        },
+        "person": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5X209EM4VqymtYbZWFNsQr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "7BwDwnhLWgC2Cf2gdPSmSX",
+        "type": "Entry",
+        "createdAt": "2021-12-13T18:50:57.305Z",
+        "updatedAt": "2021-12-13T18:51:53.145Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-12-13T18:51:53.145Z",
+        "firstPublishedAt": "2021-12-13T18:51:53.145Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Agile Workflow"
+        },
+        "description": {
+          "en-US": "What else is there?"
+        },
+        "person": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5X209EM4VqymtYbZWFNsQr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "ZPM1m4NlvgtmAFFuVQTbR",
+        "type": "Entry",
+        "createdAt": "2021-12-16T18:37:25.540Z",
+        "updatedAt": "2021-12-16T18:38:59.052Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-12-16T18:38:59.052Z",
+        "firstPublishedAt": "2021-12-16T18:38:59.052Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "skill"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Git"
+        },
+        "description": {
+          "en-US": "I get around !"
+        },
+        "person": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5X209EM4VqymtYbZWFNsQr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "id": "2d2eYkcq7l0Opt2bMtttbd",
+        "type": "Asset",
+        "createdAt": "2021-12-16T15:47:53.198Z",
+        "updatedAt": "2021-12-16T15:48:24.318Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2021-12-16T15:48:24.318Z",
+        "firstPublishedAt": "2021-12-16T15:48:24.318Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "marcus image"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/8zae7nvz50pi/2d2eYkcq7l0Opt2bMtttbd/97e7c2d437cfefb4e53b1ccab974ee21/marcus2m.JPG",
+            "details": {
+              "size": 154035,
+              "image": {
+                "width": 1303,
+                "height": 1303
+              }
+            },
+            "fileName": "marcus2m.JPG",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "1yRXnCTGFEMgcTi5x1z4D4",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "c1ebd25b-f042-452f-96e4-f7508c4670c4"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "createdAt": "2021-11-22T10:45:15Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedAt": "2021-11-22T10:45:15Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "1yTgjA4eE9cg551pPf0LLM",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "8zae7nvz50pi"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "createdAt": "2021-11-22T10:45:15Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17ZdB3RWZM5G30WcMw3G4m"
+          }
+        },
+        "updatedAt": "2021-11-22T10:45:15Z"
+      }
+    }
+  ]
+}

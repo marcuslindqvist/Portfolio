@@ -1,23 +1,16 @@
-import * as React from "react";
-import Nav from "../components/nav";
-import Header from "../components/header";
-import SideNav from "../components/SideNav";
+import * as React from 'react';
+import Layout from '../components/layout';
 
 const AboutPage = () => {
     return (
-        <div className="page-container">
-            <Header />
+        <Layout>
             <div className="content-sidenav-container">
-                <div className="content">
-                    <div className="about-content-container">
-                        <h1>COMING SOON</h1>
-                    </div>
-                    <div className="about-content-container"></div>
+                <div className="about-content-container">
+                    <h1>COMING SOON</h1>
                 </div>
-                <SideNav />
+                <div className="about-content-container"></div>
             </div>
-            <Nav />
-        </div>
+        </Layout>
     );
 };
 
