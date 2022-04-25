@@ -109,7 +109,7 @@ button#email-icon:hover #envelope-closed {
 }
 /* index page */
 #index-img {
-    background-image: url('../assets/marcus-street.jpg');
+    /* background-image: url('../assets/marcus-street.jpg'); */
     background-repeat: no-repeat;
     background-position: top;
     background-size: auto;
