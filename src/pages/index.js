@@ -13,7 +13,6 @@ export const query = graphql`
 `;
 
 const IndexPage = ({ data }) => {
-    console.log(data.allContentfulAsset.nodes[1].url);
     return (
         <Layout>
             <div id="index-img">
