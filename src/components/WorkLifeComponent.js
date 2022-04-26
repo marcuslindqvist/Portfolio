@@ -6,25 +6,27 @@ const WorkLifeComponent = () => {
         <div>
             <StaticQuery
                 query={graphql`
-                    query JobQuery {
-                        allContentfulPerson(
-                            filter: {
-                                firstName: { eq: "Marcus" }
-                                surname: { eq: "Lindqvist" }
-                            }
-                        ) {
+                    {
+                        allContentfulWorkExperience(sort: { fields: endDate }) {
                             nodes {
-                                work_experience {
-                                    id
-                                    employer
-                                    endDate(formatString: "YYYY")
-                                    isOngoing
-                                    startDate(formatString: "YYYY")
-                                    title
-                                    description {
-                                        description
-                                    }
+                                id
+                                employer
+                                endDate(formatString: "YYYY")
+                                location
+                                title
+                                startDate(formatString: "YYYY")
+                                description {
+                                    description
                                 }
+                            }
+                        }
+                        allContentfulSkill {
+                            nodes {
+                                id
+                                description {
+                                    description
+                                }
+                                title
                             }
                         }
                     }
@@ -32,8 +34,10 @@ const WorkLifeComponent = () => {
                 render={(data) => (
                     <div className="resume-item">
                         <ul className="comp-list">
-                            {data.allContentfulPerson.nodes[0].work_experience.map(
-                                (job) => (
+                            {data.allContentfulWorkExperience.nodes
+                                .slice(0)
+                                .reverse()
+                                .map((job) => (
                                     <li key={job.id} className="exp-item">
                                         <span className="dot"></span>
 
@@ -41,9 +45,11 @@ const WorkLifeComponent = () => {
                                             <p>
                                                 {job.startDate}
                                                 {job.endDate !==
-                                                    job.startDate &&
-                                                job.isOngoing === true ? (
-                                                    <span> - Pågående</span>
+                                                job.startDate ? (
+                                                    <span>
+                                                        {' '}
+                                                        - {job.endDate}
+                                                    </span>
                                                 ) : (
                                                     <span></span>
                                                 )}
@@ -58,9 +64,16 @@ const WorkLifeComponent = () => {
                                             {job.description.description}
                                         </p>
                                     </li>
-                                )
-                            )}
+                                ))}
                         </ul>
+                        {/* <div className="skills-row">
+                            {data.allContentfulSkill.nodes.map((skill) => (
+                                <div className="skill-item" key={skill.id}>
+                                    <h3>{skill.title}</h3>
+                                    <p>{skill.description.description}</p>
+                                </div>
+                            ))}
+                        </div> */}
                     </div>
                 )}
             />
@@ -68,19 +81,3 @@ const WorkLifeComponent = () => {
     );
 };
 export default WorkLifeComponent;
-
-// {
-//                         allContentfulWorkExperience {
-//                             nodes {
-//                                 employer
-//                                 id
-//                                 isOngoing
-//                                 startDate(formatString: "YYYY")
-//                                 endDate(formatString: "YYYY")
-//                                 title
-//                                 description {
-//                                     description
-//                                 }
-//                             }
-//                         }
-//                     }

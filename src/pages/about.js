@@ -3,24 +3,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 export const query = graphql`
     {
-        allContentfulSkill(
-            filter: {
-                person: {
-                    elemMatch: {
-                        firstName: { eq: "Marcus" }
-                        surname: { eq: "Lindqvist" }
-                    }
-                }
-            }
-        ) {
-            nodes {
-                id
-                title
-                description {
-                    description
-                }
-            }
-        }
         allContentfulPerson(
             filter: {
                 firstName: { eq: "Marcus" }
@@ -45,6 +27,7 @@ export const query = graphql`
 const AboutPage = ({ data }) => {
     return (
         <Layout>
+            <h1>Om mig</h1>
             <div className="about-content-container">
                 <div className="image-container">
                     <img
@@ -57,7 +40,7 @@ const AboutPage = ({ data }) => {
                 </div>
                 <div className="about-text">
                     <section className="who">
-                        <h1>Vem är jag?</h1>
+                        <h2>Vem är jag?</h2>
                         <p>
                             {
                                 data.allContentfulPerson.nodes[0]
@@ -67,15 +50,6 @@ const AboutPage = ({ data }) => {
                     </section>
                 </div>
             </div>
-
-            {/* <div className="skills-row">
-                {data.allContentfulSkill.nodes.map((skill) => (
-                    <div className="skill-item" key={skill.id}>
-                        <h3>{skill.title}</h3>
-                        <p>{skill.description.description}</p>
-                    </div>
-                ))}
-            </div> */}
         </Layout>
     );
 };

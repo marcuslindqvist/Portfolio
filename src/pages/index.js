@@ -1,8 +1,19 @@
 import * as React from 'react';
 import '../styling/index.css';
 import Layout from '../components/layout';
+import { graphql } from 'gatsby';
+export const query = graphql`
+    {
+        allContentfulAsset {
+            nodes {
+                url
+            }
+        }
+    }
+`;
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+    console.log(data.allContentfulAsset.nodes[1].url);
     return (
         <Layout>
             <div id="index-img">

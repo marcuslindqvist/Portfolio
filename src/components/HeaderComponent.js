@@ -40,7 +40,7 @@ const HeaderComponent = () => {
                         <a
                             href={`mailto:${data.allContentfulPerson.nodes[0].personalInformation.email}`}
                         >
-                            <button id="email-icon">
+                            <button id="email-icon" className="hover-links">
                                 <FontAwesomeIcon
                                     icon={faEnvelope}
                                     id="envelope-closed"
@@ -51,7 +51,7 @@ const HeaderComponent = () => {
                                 />
                                 email me!
                             </button>
-                            <span id="email-text">
+                            <span id="email-text" className="hover-links">
                                 {
                                     data.allContentfulPerson.nodes[0]
                                         .personalInformation.email

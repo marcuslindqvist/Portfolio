@@ -1,42 +1,25 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
+const isActive = ({ isCurrent }) => {
+    return isCurrent ? { className: 'link-active' } : {};
+};
 const NavComponent = () => {
     return (
         <nav className="nav">
-            <Link
-                to="/"
-                activeClassName="activeLink"
-                isCurrent={true}
-                className="nav-link nav-link-fade-up"
-            >
+            <Link to="/" getProps={isActive} className="nav-link">
                 Hem
             </Link>
 
-            <Link
-                to="/about"
-                activeClassName="activeLink"
-                isCurrent={true}
-                className="nav-link nav-link-fade-up"
-            >
+            <Link to="/about" getProps={isActive} className="nav-link">
                 Om
             </Link>
 
-            <Link
-                to="/resume"
-                activeClassName="activeLink"
-                isCurrent={true}
-                className="nav-link nav-link-fade-up"
-            >
+            <Link to="/resume" getProps={isActive} className="nav-link">
                 Resumé
             </Link>
 
-            <Link
-                to="/projects"
-                activeClassName="activeLink"
-                isCurrent={true}
-                className="nav-link nav-link-fade-up"
-            >
+            <Link to="/projects" getProps={isActive} className="nav-link">
                 Projekt
             </Link>
         </nav>
