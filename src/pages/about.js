@@ -3,16 +3,14 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 export const query = graphql`
     {
-        allContentfulPerson(
-            filter: {
-                firstName: { eq: "Marcus" }
-                surname: { eq: "Lindqvist" }
-            }
-        ) {
+        allContentfulPerson(filter: { firstName: { eq: "Marcus" } }) {
             nodes {
                 personal_letter {
                     text {
                         text
+                    }
+                    text2 {
+                        text2
                     }
                     profilePicture {
                         file {
@@ -24,10 +22,13 @@ export const query = graphql`
         }
     }
 `;
+
 const AboutPage = ({ data }) => {
     return (
         <Layout>
-            <h1>Om mig</h1>
+            <div className="title-section">
+                <h1>Om mig</h1>
+            </div>
             <div className="about-content-container">
                 <div className="image-container">
                     <img
@@ -45,6 +46,13 @@ const AboutPage = ({ data }) => {
                             {
                                 data.allContentfulPerson.nodes[0]
                                     .personal_letter[0].text.text
+                            }
+                        </p>
+                        <br />
+                        <p>
+                            {
+                                data.allContentfulPerson.nodes[0]
+                                    .personal_letter[0].text2.text2
                             }
                         </p>
                     </section>
