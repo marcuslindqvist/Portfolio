@@ -334,7 +334,7 @@ button#email-icon:hover #envelope-closed {
     padding-bottom: 1rem;
 }
 .project-text {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 .project-links {
     width: 100%;
