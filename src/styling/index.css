@@ -57,10 +57,11 @@ button#email-icon:hover {
     flex-direction: column;
     height: 100vh;
 }
+
 .page-container {
     background-color: var(--paper);
     height: 100%;
-    padding: 1rem 0.6rem 4rem;
+    padding: 0 0.6rem 4rem;
     overflow-y: scroll;
 }
 
@@ -77,6 +78,7 @@ header.top-header {
     display: none;
     padding: 0.6rem;
 }
+
 button#email-icon {
     display: inline-block;
     border: none;
@@ -87,16 +89,20 @@ button#email-icon #envelope-open {
     display: none;
     margin-right: 0.6rem;
 }
+
 button#email-icon #envelope-closed {
     display: inline;
     margin-right: 0.6rem;
 }
+
 button#email-icon:hover #envelope-open {
     display: inline;
 }
+
 button#email-icon:hover #envelope-closed {
     display: none;
 }
+
 /* Main nav*/
 .nav {
     background-color: var(--paper);
@@ -128,7 +134,7 @@ button#email-icon:hover #envelope-closed {
     background-repeat: no-repeat;
     background-position: top;
     background-size: auto;
-    height: 90%;
+    height: 95%;
     padding: 2.4rem 1rem;
     display: flex;
     flex-direction: column;
@@ -314,7 +320,7 @@ button#email-icon:hover #envelope-closed {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: margin 100ms ease-in, box-shadow 200ms ease-in;
+    transition: margin 100ms ease-in, box-shadow 100ms ease-in;
 }
 .project-list .img-container:hover {
     margin: -5px 0 5px;
@@ -324,10 +330,17 @@ button#email-icon:hover #envelope-closed {
     width: 100%;
     height: auto;
 }
+.project-item h2 {
+    padding-bottom: 1rem;
+}
+.project-text {
+    padding: 1rem;
+}
 .project-links {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     padding: 1rem;
 }
 @media only screen and (min-width: 900px) {

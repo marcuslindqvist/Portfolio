@@ -1,9 +1,15 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+
 export const query = graphql`
     {
-        allContentfulPerson(filter: { firstName: { eq: "Marcus" } }) {
+        allContentfulPerson(
+            filter: {
+                firstName: { eq: "Marcus" }
+                surname: { eq: "Lindqvist" }
+            }
+        ) {
             nodes {
                 personal_letter {
                     text {
@@ -13,9 +19,7 @@ export const query = graphql`
                         text2
                     }
                     profilePicture {
-                        file {
-                            url
-                        }
+                        url
                     }
                 }
             }
@@ -34,7 +38,7 @@ const AboutPage = ({ data }) => {
                     <img
                         src={
                             data.allContentfulPerson.nodes[0].personal_letter[0]
-                                .profilePicture.file.url
+                                .profilePicture.url
                         }
                         alt="profile"
                     />

@@ -12,7 +12,7 @@ const ProjectItemComponent = (props) => {
                 )}
             </div>
 
-            <p>
+            <p className="project-text">
                 <strong>{props.short}</strong>
             </p>
             <p>{props.long}</p>
