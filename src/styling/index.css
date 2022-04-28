@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Work+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
 :root {
     --paper: rgb(248, 246, 223);
     --xiketic: #150b0e;
@@ -18,13 +18,13 @@ body {
 
 h1 {
     font-size: 5rem;
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Crimson Pro', sans;
     font-weight: 200;
 }
 
 h2 {
     font-size: 3rem;
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Crimson Pro', sans;
 }
 
 h3 {
@@ -133,6 +133,7 @@ button#email-icon:hover #envelope-closed {
 #index-img {
     /* background-image: url('https://images.ctfassets.net/8zae7nvz50pi/7vWV60WRlPBcohYgQWv3qR/21669bf7a0251bd2f18df0d4c8483fec/marcus-street.JPG'); */
     background-image: url('https://images.ctfassets.net/8zae7nvz50pi/293cX3nSEpbEQDAzexXoHj/c0b388983b60804426e550b4e955da57/_DSF0197-Redigera.jpg');
+    background-color: #70c9db;
     background-repeat: no-repeat;
     background-position: 50% 25%;
     background-size: cover;
@@ -141,19 +142,31 @@ button#email-icon:hover #envelope-closed {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: height 500ms ease-in;
 }
 .index-heading.end {
     text-align: right;
 }
 .index-heading h1 {
-    color: var(--firebrick);
-    word-break: break-word;
-    font-size: 3rem;
+    cursor: default;
+    font-size: 2.4rem;
+}
+.index-heading h1 span {
+    font-family: 'Rubik Puddles', cursive;
+    transition: letter-spacing 700ms ease-out, font-size 200ms ease-in;
+    color: (--paper);
+    font-size: 2.4rem;
     text-transform: uppercase;
     word-break: keep-all;
+    line-height: 2rem;
 }
-
+.index-heading h1 span:hover {
+    font-size: 2.1rem;
+}
 /* about page */
+.who h2 {
+    padding: 1rem 0;
+}
 .about-content-container .image-container {
     display: flex;
     justify-content: center;
@@ -333,29 +346,19 @@ button#email-icon:hover #envelope-closed {
     }
 
     #index-img {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 1rem;
-        height: 96%;
-    }
-
-    .index-heading.start {
-        grid-column: 1 / span 2;
-        grid-row-start: 1;
-        display: flex;
-        justify-content: center;
-    }
-
-    .index-heading.end {
-        text-align: center;
-        grid-column: 2 / span 2;
-        grid-row-start: 2;
-        display: flex;
-        align-items: flex-end;
+        height: 93%;
     }
     .index-heading h1 {
+        padding: 1rem;
         font-size: 5rem;
+    }
+    .index-heading h1 span {
+        font-size: 5.2rem;
+        letter-spacing: 0.2rem;
+    }
+    .index-heading h1 span:hover {
+        font-size: 5.6rem;
+        letter-spacing: 0.5rem;
     }
     .title-section {
         margin: 2rem 2rem;
@@ -418,18 +421,17 @@ button#email-icon:hover #envelope-closed {
 
 @media only screen and (min-width: 1225px) {
     #index-img {
-        padding: 2rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         height: 90%;
     }
-    .index-heading.start {
-        grid-column: 1;
-        grid-row: 1;
+    .index-heading h1 {
+        padding: 3rem;
     }
-    .index-heading.end {
-        grid-column: 2;
-        grid-row: 2;
+    .index-heading h1 span {
+        font-size: 7rem;
+    }
+    .index-heading h1 span:hover {
+        letter-spacing: 0.6rem;
+        font-size: 7.5rem;
     }
     .about-content-container img {
         max-width: 500px;
@@ -445,22 +447,5 @@ button#email-icon:hover #envelope-closed {
     }
     .project-list li {
         max-width: 50%;
-    }
-}
-@media only screen and (min-width: 2000px) {
-    #index-img {
-        padding: 2rem;
-        grid-template-columns: 1fr 50% 50% 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-    .index-heading.start {
-        grid-column-start: 2;
-        grid-row-start: 2;
-    }
-    .index-heading.end {
-        grid-column-start: 3;
-        grid-row-start: 3;
-        text-align: right;
-        min-width: max-content;
     }
 }

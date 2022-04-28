@@ -32,7 +32,7 @@ const AboutPage = ({ data }) => {
         <Layout>
             <div className="about-page">
                 <div className="title-section">
-                    <h1>Om mig</h1>
+                    <h1>Om</h1>
                 </div>
                 <div className="about-content-container">
                     <div className="image-container">
@@ -63,7 +63,7 @@ const AboutPage = ({ data }) => {
                         </section>
                     </div>
                 </div>
-                <section className="contact-box">
+                {/* <section className="contact-box">
                     <h2>reach out!</h2>
                     <div className="contact-links">
                         <a
@@ -74,7 +74,7 @@ const AboutPage = ({ data }) => {
                         </a>
                         <a href="https://github.com/marcuslindqvist">Github</a>
                     </div>
-                </section>
+                </section> */}
             </div>
         </Layout>
     );
