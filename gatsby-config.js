@@ -33,5 +33,11 @@ module.exports = {
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-fontawesome-css`,
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+                icon: 'src/assets/icon.png',
+            },
+        },
     ],
 };

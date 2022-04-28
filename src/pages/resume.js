@@ -40,11 +40,6 @@ const Resume = () => {
                     <EducationComponent />
                 </>
             )}
-
-            <br />
-            <a href="#page-top" className="hover-links to-top-link">
-                till toppen
-            </a>
         </Layout>
     );
 };

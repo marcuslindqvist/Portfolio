@@ -30,37 +30,51 @@ export const query = graphql`
 const AboutPage = ({ data }) => {
     return (
         <Layout>
-            <div className="title-section">
-                <h1>Om mig</h1>
-            </div>
-            <div className="about-content-container">
-                <div className="image-container">
-                    <img
-                        src={
-                            data.allContentfulPerson.nodes[0].personal_letter[0]
-                                .profilePicture.url
-                        }
-                        alt="profile"
-                    />
+            <div className="about-page">
+                <div className="title-section">
+                    <h1>Om mig</h1>
                 </div>
-                <div className="about-text">
-                    <section className="who">
-                        <h2>Vem är jag?</h2>
-                        <p>
-                            {
+                <div className="about-content-container">
+                    <div className="image-container">
+                        <img
+                            src={
                                 data.allContentfulPerson.nodes[0]
-                                    .personal_letter[0].text.text
+                                    .personal_letter[0].profilePicture.url
                             }
-                        </p>
-                        <br />
-                        <p>
-                            {
-                                data.allContentfulPerson.nodes[0]
-                                    .personal_letter[0].text2.text2
-                            }
-                        </p>
-                    </section>
+                            alt="profile"
+                        />
+                    </div>
+                    <div className="about-text">
+                        <section className="who">
+                            <h2>Vem är jag?</h2>
+                            <p>
+                                {
+                                    data.allContentfulPerson.nodes[0]
+                                        .personal_letter[0].text.text
+                                }
+                            </p>
+                            <br />
+                            <p>
+                                {
+                                    data.allContentfulPerson.nodes[0]
+                                        .personal_letter[0].text2.text2
+                                }
+                            </p>
+                        </section>
+                    </div>
                 </div>
+                <section className="contact-box">
+                    <h2>reach out!</h2>
+                    <div className="contact-links">
+                        <a
+                            href="www.linkedin.com/in/marcuslindqvistdev
+"
+                        >
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/marcuslindqvist">Github</a>
+                    </div>
+                </section>
             </div>
         </Layout>
     );

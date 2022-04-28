@@ -46,9 +46,6 @@ const ProjectsPage = ({ data }) => {
                     </li>
                 ))}
             </ul>
-            <a href="#page-top" className="hover-links">
-                till toppen
-            </a>
         </Layout>
     );
 };
