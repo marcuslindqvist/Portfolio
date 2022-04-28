@@ -4,9 +4,9 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
+
 const HeaderComponent = () => {
     const space = '\u00a0';
-
     return (
         <StaticQuery
             query={graphql`
@@ -50,13 +50,7 @@ const HeaderComponent = () => {
                             />
                             <span>email me!</span>
                         </button>
-                        <span id="email-text" className="hover-links">
-                            {
-                                data.allContentfulPerson.nodes[0]
-                                    .personalInformation.email
-                            }
-                        </span>
-                    </a>{' '}
+                    </a>
                 </header>
             )}
         />

@@ -24,7 +24,6 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    font-family: 'Crimson Pro', sans;
 }
 
 h3 {
@@ -51,6 +50,7 @@ button#email-icon:hover {
     color: var(--paper);
     background-color: var(--firebrick);
     cursor: pointer;
+    opacity: 1;
 }
 
 .root-container {
@@ -78,20 +78,17 @@ button#email-icon.hover-links {
     display: flex;
     align-items: flex-end;
 }
-#email-text {
-    display: none;
-    padding: 0.6rem;
-}
 
 button#email-icon {
     display: inline-block;
     border: none;
     background-color: var(--paper);
+    opacity: 0.8;
 }
-button#email-icon span {
-    opacity: 0.6;
+button#email-icon:hover {
+    display: flex;
+    align-items: center;
 }
-
 button#email-icon #envelope-open {
     display: none;
     margin-right: 0.6rem;
@@ -137,8 +134,7 @@ button#email-icon:hover #envelope-closed {
 /* index page */
 
 #index-img {
-    /* background-image: url('https://images.ctfassets.net/8zae7nvz50pi/7vWV60WRlPBcohYgQWv3qR/21669bf7a0251bd2f18df0d4c8483fec/marcus-street.JPG'); */
-    background-image: url('https://images.ctfassets.net/8zae7nvz50pi/293cX3nSEpbEQDAzexXoHj/c0b388983b60804426e550b4e955da57/_DSF0197-Redigera.jpg');
+    background-image: url('https://images.ctfassets.net/8zae7nvz50pi/293cX3nSEpbEQDAzexXoHj/e105a7ee9b3b336c59b55401d8bf0986/_DSF0197-Redigera-2.jpg');
     background-color: #70c9db;
     background-repeat: no-repeat;
     background-position: 50% 25%;
@@ -156,11 +152,12 @@ button#email-icon:hover #envelope-closed {
 .index-heading h1 {
     cursor: default;
     font-size: 2.4rem;
+    padding: 2rem 0;
 }
 .index-heading h1 span {
-    font-family: 'Rubik Puddles', cursive;
-    transition: letter-spacing 700ms ease-out, font-size 200ms ease-in;
-    color: (--paper);
+    font-family: 'Rubik Puddles', 'Work Sans';
+    transition: letter-spacing 600ms ease-out, font-size 600ms ease-in;
+    color: var(--paper);
     font-size: 2.4rem;
     text-transform: uppercase;
     word-break: keep-all;
@@ -179,7 +176,8 @@ button#email-icon:hover #envelope-closed {
     width: 100%;
 }
 .about-content-container img {
-    box-shadow: 10px 10px var(--firebrick);
+    border: 4px solid var(--firebrick);
+    border-radius: 2px;
     height: auto;
     max-width: 200px;
 }
@@ -194,7 +192,8 @@ button#email-icon:hover #envelope-closed {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 0;
+    gap: 1rem;
 }
 .resume-item {
     display: flex;
@@ -234,7 +233,7 @@ button#email-icon:hover #envelope-closed {
     margin-left: -3.1rem;
     align-self: flex-start;
     z-index: 15;
-    transition: background-color 500ms ease-out;
+    transition: background-color 400ms ease-in-out;
 }
 .exp-item:hover .dot {
     background-color: var(--xiketic);
@@ -242,7 +241,7 @@ button#email-icon:hover #envelope-closed {
 
 .exp-item {
     list-style-type: none;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
     display: flex;
     flex-direction: column;
 }
@@ -307,6 +306,21 @@ button#email-icon:hover #envelope-closed {
     gap: 2rem;
     padding: 1rem;
 }
+/* KontaktModal */
+.contact-modal-show {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.5);
+}
+.contact-modal-hide {
+    display: hidden;
+}
 @media only screen and (min-width: 900px) {
     .page-container {
         padding: 0 3rem;
@@ -321,19 +335,12 @@ button#email-icon:hover #envelope-closed {
         gap: 3rem;
     }
 
-    #email-text {
-        display: inline-block;
-    }
-
-    button#email-icon {
-        display: none;
-    }
-
     #index-img {
         height: 93%;
     }
     .index-heading h1 {
-        padding: 1rem;
+        padding: 2rem 2rem;
+
         font-size: 5rem;
     }
     .index-heading h1 span {
@@ -350,7 +357,8 @@ button#email-icon:hover #envelope-closed {
 
     .about-content-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .about-content-container .image-container {
         width: 50%;
@@ -362,7 +370,15 @@ button#email-icon:hover #envelope-closed {
         height: auto;
     }
     .about-text {
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text .who {
+        display: flex;
+        gap: 2rem;
+    }
+    .who p {
+        max-width: 50%;
     }
     .resume-item {
         margin-bottom: 3rem;
@@ -398,16 +414,27 @@ button#email-icon:hover #envelope-closed {
         letter-spacing: 0.6rem;
         font-size: 7.5rem;
     }
-    .about-content-container img {
-        max-width: 500px;
+    .about-content-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .about-content-container .image-container {
+        max-width: 40%;
+    }
+    .about-content-container .image-container img {
+        max-width: 50%;
     }
     .about-text {
-        max-width: 500px;
-        display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        max-width: 40%;
     }
-
+    .about-text .who {
+        flex-direction: column;
+        gap: 0;
+    }
+    .who p {
+        max-width: none;
+    }
     .comp-list {
         flex-direction: row;
         border-top: 1px var(--xiketic) solid;

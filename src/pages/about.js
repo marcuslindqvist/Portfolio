@@ -45,8 +45,8 @@ const AboutPage = ({ data }) => {
                         />
                     </div>
                     <div className="about-text">
+                        <h2>Vem är jag?</h2>
                         <section className="who">
-                            <h2>Vem är jag?</h2>
                             <p>
                                 {
                                     data.allContentfulPerson.nodes[0]
@@ -63,18 +63,6 @@ const AboutPage = ({ data }) => {
                         </section>
                     </div>
                 </div>
-                {/* <section className="contact-box">
-                    <h2>reach out!</h2>
-                    <div className="contact-links">
-                        <a
-                            href="www.linkedin.com/in/marcuslindqvistdev
-"
-                        >
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/marcuslindqvist">Github</a>
-                    </div>
-                </section> */}
             </div>
         </Layout>
     );
