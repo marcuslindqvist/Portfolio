@@ -36,29 +36,27 @@ const HeaderComponent = () => {
                             {data.allContentfulPerson.nodes[0].surname}
                         </Link>
                     </h4>
-                    <h4>
-                        <a
-                            href={`mailto:${data.allContentfulPerson.nodes[0].personalInformation.email}`}
-                        >
-                            <button id="email-icon" className="hover-links">
-                                <FontAwesomeIcon
-                                    icon={faEnvelope}
-                                    id="envelope-closed"
-                                />
-                                <FontAwesomeIcon
-                                    icon={faEnvelopeOpen}
-                                    id="envelope-open"
-                                />
-                                email me!
-                            </button>
-                            <span id="email-text" className="hover-links">
-                                {
-                                    data.allContentfulPerson.nodes[0]
-                                        .personalInformation.email
-                                }
-                            </span>
-                        </a>{' '}
-                    </h4>
+                    <a
+                        href={`mailto:${data.allContentfulPerson.nodes[0].personalInformation.email}`}
+                    >
+                        <button id="email-icon" className="hover-links">
+                            <FontAwesomeIcon
+                                icon={faEnvelope}
+                                id="envelope-closed"
+                            />
+                            <FontAwesomeIcon
+                                icon={faEnvelopeOpen}
+                                id="envelope-open"
+                            />
+                            <span>email me!</span>
+                        </button>
+                        <span id="email-text" className="hover-links">
+                            {
+                                data.allContentfulPerson.nodes[0]
+                                    .personalInformation.email
+                            }
+                        </span>
+                    </a>{' '}
                 </header>
             )}
         />

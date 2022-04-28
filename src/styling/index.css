@@ -74,7 +74,10 @@ header.top-header {
     gap: 1rem;
     justify-content: space-around;
 }
-
+button#email-icon.hover-links {
+    display: flex;
+    align-items: flex-end;
+}
 #email-text {
     display: none;
     padding: 0.6rem;
@@ -84,6 +87,9 @@ button#email-icon {
     display: inline-block;
     border: none;
     background-color: var(--paper);
+}
+button#email-icon span {
+    opacity: 0.6;
 }
 
 button#email-icon #envelope-open {
@@ -177,29 +183,6 @@ button#email-icon:hover #envelope-closed {
     height: auto;
     max-width: 200px;
 }
-.contact-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-}
-.contact-links {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-.contact-links a {
-    padding: 0.4rem 0.6rem;
-    border-radius: 1rem;
-    border: 1px solid var(--firebrick);
-}
-.contact-links a:hover {
-    background-color: var(--firebrick);
-    color: var(--paper);
-}
 /*resume */
 .comp-list {
     display: flex;
@@ -253,6 +236,10 @@ button#email-icon:hover #envelope-closed {
     z-index: 15;
     transition: background-color 500ms ease-out;
 }
+.exp-item:hover .dot {
+    background-color: var(--xiketic);
+}
+
 .exp-item {
     list-style-type: none;
     margin-right: 2rem;
@@ -261,9 +248,6 @@ button#email-icon:hover #envelope-closed {
 }
 .exp-item h3 {
     margin: 0.4rem 0;
-}
-.exp-item:hover .dot {
-    background-color: var(--xiketic);
 }
 
 .exp-item .desc {
@@ -380,9 +364,6 @@ button#email-icon:hover #envelope-closed {
     .about-text {
         width: 50%;
     }
-    .contact-box {
-        margin-bottom: 3rem;
-    }
     .resume-item {
         margin-bottom: 3rem;
     }
@@ -392,22 +373,6 @@ button#email-icon:hover #envelope-closed {
         padding: 1rem;
     }
 
-    .comp-list {
-        flex-direction: row;
-        border-top: 1px var(--xiketic) solid;
-        border-left: none;
-        justify-content: space-between;
-        width: 100%;
-        padding-top: 1rem;
-        margin-top: 4rem;
-    }
-    .dot {
-        margin-top: -2rem;
-        margin-bottom: 2rem;
-        margin-left: 0;
-        justify-self: center;
-        transition: background-color 500ms ease-out;
-    }
     .exp-item h3 {
         margin: 1rem 0;
     }
@@ -441,6 +406,23 @@ button#email-icon:hover #envelope-closed {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .comp-list {
+        flex-direction: row;
+        border-top: 1px var(--xiketic) solid;
+        border-left: none;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 1rem;
+        margin-top: 4rem;
+    }
+    .dot {
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+        margin-left: 0;
+        justify-self: center;
+        transition: background-color 500ms ease-out;
     }
     .to-top-link {
         display: none;
