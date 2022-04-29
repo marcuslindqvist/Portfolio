@@ -1,10 +1,12 @@
 import * as React from 'react';
+import Layout from '../components/layout';
+import '../styling/index.css';
 
 const NotFound = () => {
     return (
-        <div>
+        <Layout>
             <h1>sorry this page was not found</h1>
-        </div>
+        </Layout>
     );
 };
 

@@ -2,6 +2,7 @@ import * as React from 'react';
 import Layout from '../components/layout';
 import ProjectItemComponent from '../components/ProjectItemComponent';
 import { graphql } from 'gatsby';
+import '../styling/index.css';
 
 export const projectQuery = graphql`
     {

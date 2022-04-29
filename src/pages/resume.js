@@ -3,6 +3,7 @@ import { useState } from 'react';
 import WorkLifeComponent from '../components/WorkLifeComponent';
 import Layout from '../components/layout';
 import EducationComponent from '../components/EducationComponent';
+import '../styling/index.css';
 
 const Resume = () => {
     const [isWork, setIsWork] = useState(true);
