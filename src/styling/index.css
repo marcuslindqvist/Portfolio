@@ -134,7 +134,7 @@ button#email-icon:hover #envelope-closed {
 /* index page */
 
 #index-img {
-    background-image: url('https://images.ctfassets.net/8zae7nvz50pi/293cX3nSEpbEQDAzexXoHj/e105a7ee9b3b336c59b55401d8bf0986/_DSF0197-Redigera-2.jpg');
+    background-image: url('https://images.ctfassets.net/8zae7nvz50pi/293cX3nSEpbEQDAzexXoHj/fba2efeebf10ca2308f9efbcba863bcb/marcus-new.jpg');
     background-color: #70c9db;
     background-repeat: no-repeat;
     background-position: 50% 25%;
@@ -151,20 +151,20 @@ button#email-icon:hover #envelope-closed {
 }
 .index-heading h1 {
     cursor: default;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     padding: 2rem 0;
 }
 .index-heading h1 span {
     font-family: 'Rubik Puddles', 'Work Sans';
-    transition: letter-spacing 600ms ease-out, font-size 600ms ease-in;
+    transition: letter-spacing 400ms ease-in-out, font-size 200ms ease-in-out;
     color: var(--firebrick);
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     word-break: keep-all;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 .index-heading h1 span:hover {
-    font-size: 2.1rem;
+    font-size: 3rem;
 }
 /* about page */
 .who h2 {
@@ -341,15 +341,14 @@ button#email-icon:hover #envelope-closed {
     }
     .index-heading h1 {
         padding: 2rem 2rem;
-
-        font-size: 5rem;
+        font-size: 6.2rem;
     }
     .index-heading h1 span {
-        font-size: 5.2rem;
+        font-size: 6.2rem;
         letter-spacing: 0.2rem;
     }
     .index-heading h1 span:hover {
-        font-size: 5.6rem;
+        font-size: 6.4rem;
         letter-spacing: 0.5rem;
     }
     .title-section {
