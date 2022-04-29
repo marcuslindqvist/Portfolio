@@ -157,7 +157,7 @@ button#email-icon:hover #envelope-closed {
 .index-heading h1 span {
     font-family: 'Rubik Puddles', 'Work Sans';
     transition: letter-spacing 600ms ease-out, font-size 600ms ease-in;
-    color: var(--paper);
+    color: var(--firebrick);
     font-size: 2.4rem;
     text-transform: uppercase;
     word-break: keep-all;
@@ -268,13 +268,14 @@ button#email-icon:hover #envelope-closed {
     gap: 4rem;
     width: 100%;
     padding-left: 0;
+    padding-bottom: 4rem;
 }
 .project-list li {
     list-style-type: none;
 }
 
 .project-list .img-container {
-    border: 5px solid var(--xiketic);
+    border: 5px solid var(--firebrick);
     background-color: white;
     object-fit: cover;
     max-height: 400px;
@@ -287,7 +288,7 @@ button#email-icon:hover #envelope-closed {
 }
 .project-list .img-container:hover {
     margin: -5px 0 5px;
-    box-shadow: 0px 4px 0px 0px var(--firebrick);
+    box-shadow: 0px 4px 0px 0px var(--xiketic);
 }
 .project-list img {
     width: 100%;
