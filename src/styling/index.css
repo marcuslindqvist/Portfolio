@@ -476,12 +476,13 @@ button#email-icon:hover #envelope-closed {
 
     .index-heading h1 span:hover {
         letter-spacing: 0.6rem;
-        font-size: 7.5rem;
+        font-size: 8rem;
     }
 
     .about-content-container {
         flex-direction: row;
         justify-content: center;
+        padding-bottom: 5rem;
     }
 
     .about-content-container .image-container {
