@@ -507,6 +507,10 @@ button#email-icon:hover #envelope-closed {
         max-width: none;
     }
 
+    .resume-item {
+        padding-bottom: 2rem;
+    }
+
     .comp-list {
         flex-direction: row;
         border-top: 1px var(--xiketic) solid;
