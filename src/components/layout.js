@@ -6,7 +6,11 @@ import { Helmet } from 'react-helmet';
 export default function Layout({ children }) {
     return (
         <div className="root-container">
-            <Helmet>
+            <Helmet
+                htmlAttributes={{
+                    lang: 'sv',
+                }}
+            >
                 <meta charSet="utf-8" />
                 <title>Marcus Lindqvist Developer</title>
             </Helmet>
